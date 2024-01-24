@@ -10,10 +10,17 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@ant-design-vue/nuxt": "^1.4.1",
     "@nuxt/devtools": "latest",
+    "@nuxtjs/robots": "^3.0.0",
+    "@nuxtjs/sitemap": "^5.0.5",
     "@nuxtjs/tailwindcss": "^6.9.4",
     "nuxt": "^3.8.1",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
+  },
+  "dependencies": {
+    "sass": "^1.70.0",
+    "vue3-carousel-nuxt": "^1.1.0"
   }
 }

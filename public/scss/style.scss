@@ -1,0 +1,31 @@
+@mixin make_prop($prop, $value) {
+    @each $prefix in -webkit-, -moz-, -ms-, -o-, "" {
+      #{$prop} : $value;
+      #{$prefix }#{$prop} : $value;
+    }
+  }
+  
+  @mixin set_icon($name, $width, $height, $pos_x, $pos_y, $link, $color:null) {
+    .ic-#{$name} {
+      width: $width;
+      height: $height;
+      @include make_prop(mask-image, $link);
+      @include make_prop(mask-position, $pos_x $pos_y);
+      @include make_prop(mask-repeat, no-repeat);
+      @if $color != null {
+        background-color: $color;
+      } @else {
+        background-color: #111827;
+      }
+    }
+  }
+  
+  $link_icon: url('/icon.svg');
+  
+  @include set_icon(home, 24px, 24px, -301px, -780px, $link_icon);
+  @include set_icon(paper, 24px, 24px, -300px, -1019px, $link_icon);
+  @include set_icon(book, 24px, 24px, -361px, -1080px, $link_icon);
+  @include set_icon(career-path, 24px, 24px, -181px, -1260px, $link_icon);
+  @include set_icon(arrow-left, 7px, 12px, -440px, -1740px, $link_icon);
+  @include set_icon(arrow-right, 7px, 12px, -505px , -1740px, $link_icon);
+  
