@@ -4,10 +4,8 @@
   </div>
 </template>
 
-<script lang="ts" setup>
-
+<script setup>
+defineOgImageComponent('CustomOgImage', {
+  title: 'Z8 | Lộ trình học',
+});
 </script>
-
-<style>
-
-</style>

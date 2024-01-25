@@ -8,7 +8,8 @@ export default defineNuxtConfig({
     "@nuxtjs/sitemap",
     "@nuxtjs/robots",
     "@vite-pwa/nuxt",
-    "@nuxtjs/web-vitals"
+    "@nuxtjs/web-vitals",
+    "nuxt-og-image"
   ],
   tailwindcss: {
   },
