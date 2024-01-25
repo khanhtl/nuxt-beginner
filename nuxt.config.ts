@@ -4,15 +4,11 @@ export default defineNuxtConfig({
   css: ['/public/scss/style.scss'],
   modules: [
     "@nuxtjs/tailwindcss",
-    'vue3-carousel-nuxt',
     "@ant-design-vue/nuxt",
     "@nuxtjs/sitemap",
     "@nuxtjs/robots"
   ],
   tailwindcss: {
-  },
-  carousel: {
-    prefix: 'Vue'
   },
   app: {
     head: {

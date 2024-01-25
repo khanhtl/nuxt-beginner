@@ -20,7 +20,6 @@
     "vue-router": "^4.2.5"
   },
   "dependencies": {
-    "sass": "^1.70.0",
-    "vue3-carousel-nuxt": "^1.1.0"
+    "sass": "^1.70.0"
   }
 }
