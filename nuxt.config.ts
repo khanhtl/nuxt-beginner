@@ -6,7 +6,9 @@ export default defineNuxtConfig({
     "@nuxtjs/tailwindcss",
     "@ant-design-vue/nuxt",
     "@nuxtjs/sitemap",
-    "@nuxtjs/robots"
+    "@nuxtjs/robots",
+    "@vite-pwa/nuxt",
+    "@nuxtjs/web-vitals"
   ],
   tailwindcss: {
   },
@@ -30,4 +32,10 @@ export default defineNuxtConfig({
       ],
     },
   },
+  nitro: {
+    prerender: {
+      crawlLinks: true,
+      routes: ['/sitemap.xml', '/robots.txt', '/', '/courses']
+    }
+  }
 });
