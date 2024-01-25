@@ -7,9 +7,6 @@ export default defineNuxtConfig({
     "@ant-design-vue/nuxt",
     "@nuxtjs/sitemap",
     "@nuxtjs/robots",
-    "@vite-pwa/nuxt",
-    "@nuxtjs/web-vitals",
-    "nuxt-og-image"
   ],
   tailwindcss: {
   },
@@ -17,14 +14,14 @@ export default defineNuxtConfig({
     head: {
       charset: "utf-8",
       viewport: "width=device-width, initial-scale=1",
-      title: "Z8 | Học lập trình cơ bản",
+      title: "Z8 | Học lập trình web cơ bản",
       meta: [
         { charset: "utf-8" },
         { name: "viewport", content: "width=device-width, initial-scale=1" },
         {
           hid: "description",
           name: "description",
-          content: "Z8 | Học lập trình cơ bản với những khóa học Frontend với Vue.js, Angular, React, Backend Với Nest.js .NET Core",
+          content: "Z8 | Học lập trình web cơ bản với những khóa học Frontend với Vue.js, Angular, React, Backend Với Nest.js .NET Core",
         },
       ],
       link: [
@@ -40,6 +37,6 @@ export default defineNuxtConfig({
     }
   },
   site: {
-    url: 'https://zerotoone.edu.vn',
+    url: 'https://zerotoone.vercel.app',
   },
 });

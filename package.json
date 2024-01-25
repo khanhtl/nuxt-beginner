@@ -15,10 +15,7 @@
     "@nuxtjs/robots": "^3.0.0",
     "@nuxtjs/sitemap": "^5.0.5",
     "@nuxtjs/tailwindcss": "^6.9.4",
-    "@nuxtjs/web-vitals": "^0.2.6",
-    "@vite-pwa/nuxt": "^0.4.0",
     "nuxt": "^3.8.1",
-    "nuxt-og-image": "^3.0.0-rc.29",
     "sass": "^1.70.0",
     "vue": "^3.3.8",
     "vue-router": "^4.2.5"
